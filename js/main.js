@@ -617,57 +617,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (printCvBtn) {
     printCvBtn.addEventListener('click', () => {
-      window.print();
+      triggerAudio('click');
+      let printFrame = document.getElementById('cv-print-frame');
+      if (!printFrame) {
+        printFrame = document.createElement('iframe');
+        printFrame.id = 'cv-print-frame';
+        printFrame.style.position = 'fixed';
+        printFrame.style.right = '0';
+        printFrame.style.bottom = '0';
+        printFrame.style.width = '0';
+        printFrame.style.height = '0';
+        printFrame.style.border = '0';
+        printFrame.src = 'cv.html';
+        document.body.appendChild(printFrame);
+        printFrame.onload = () => {
+          setTimeout(() => {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+          }, 300);
+        };
+      } else {
+        printFrame.contentWindow.focus();
+        printFrame.contentWindow.print();
+      }
     });
   }
 
   if (downloadCvBtn) {
     downloadCvBtn.addEventListener('click', () => {
-      const element = document.getElementById('cv-printable-area');
-      const actions = element.querySelector('.modal-actions');
-      const closeBtn = element.querySelector('.modal-close');
-
-      const originalBtnText = downloadCvBtn.innerHTML;
-      downloadCvBtn.disabled = true;
-      downloadCvBtn.innerHTML = `
-        <svg style="animation:spin 1s linear infinite; width:16px; height:16px; display:inline-block; vertical-align:middle; margin-right:6px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle style="opacity:0.25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-          <path style="opacity:0.75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-        </svg>
-        Đang tải PDF...
-      `;
-
-      if (typeof html2pdf !== 'undefined') {
-        const opt = {
-          margin:       [10, 14, 10, 14],
-          filename:     'CV_Le_Thu_Trang_Tieng_Trung_Thuong_Mai_FTU_K63.pdf',
-          image:        { type: 'jpeg', quality: 0.98 },
-          html2canvas:  { scale: 2, useCORS: true, logging: false },
-          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-
-        if (actions) actions.style.display = 'none';
-        if (closeBtn) closeBtn.style.display = 'none';
-
-        html2pdf().set(opt).from(element).save().then(() => {
-          if (actions) actions.style.display = '';
-          if (closeBtn) closeBtn.style.display = '';
-          downloadCvBtn.disabled = false;
-          downloadCvBtn.innerHTML = originalBtnText;
-          showToast('✓ Đã tải PDF thành công!');
-        }).catch(err => {
-          console.error(err);
-          if (actions) actions.style.display = '';
-          if (closeBtn) closeBtn.style.display = '';
-          downloadCvBtn.disabled = false;
-          downloadCvBtn.innerHTML = originalBtnText;
-          window.print();
-        });
-      } else {
-        downloadCvBtn.disabled = false;
-        downloadCvBtn.innerHTML = originalBtnText;
-        window.print();
-      }
+      triggerAudio('click');
+      showToast('✓ Đang tải file: CV_Le_Thu_Trang_FTU_K63.pdf');
     });
   }
 

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Lê Thu Trang — Tiếng Trung Thương Mại FTU K63</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Noto+Serif+SC:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #FFFFFF;
+            color: #1A1A1A;
+            line-height: 1.45;
+            font-size: 9.5pt;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 16mm 18mm;
+        }
+        
+        /* Header */
+        .cv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2.5px solid #BA4E30;
+            padding-bottom: 12px;
+            margin-bottom: 14px;
+        }
+        .header-main h1 {
+            font-family: 'Fraunces', serif;
+            font-size: 24pt;
+            font-weight: 700;
+            color: #111111;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        .header-main h1 .chinese-name {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 16pt;
+            color: #BA4E30;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+        .header-subtitle {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #BA4E30;
+            margin-top: 4px;
+        }
+        .header-contact {
+            text-align: right;
+            font-size: 8.5pt;
+            color: #4A4A4A;
+            line-height: 1.6;
+        }
+        .header-contact strong {
+            color: #111111;
+        }
+
+        /* 2-Column Grid Layout */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 35% 62%;
+            gap: 3%;
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-family: 'Fraunces', serif;
+            font-size: 11pt;
+            font-weight: 700;
+            color: #BA4E30;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1.5px solid #EAE2D5;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .section-title:first-child {
+            margin-top: 0;
+        }
+
+        /* Items */
+        .cv-block {
+            margin-bottom: 10px;
+        }
+        .cv-item-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: #111111;
+            line-height: 1.25;
+        }
+        .cv-item-meta {
+            font-size: 8.5pt;
+            font-weight: 600;
+            color: #BA4E30;
+            margin-bottom: 3px;
+        }
+        .cv-item-time {
+            font-size: 8pt;
+            color: #777777;
+            font-weight: 500;
+        }
+        .cv-desc {
+            font-size: 8.5pt;
+            color: #333333;
+            line-height: 1.4;
+        }
+        ul.cv-list {
+            padding-left: 14px;
+            font-size: 8.5pt;
+            color: #333333;
+            line-height: 1.38;
+        }
+        ul.cv-list li {
+            margin-bottom: 3px;
+        }
+        ul.cv-list strong {
+            color: #111111;
+        }
+
+        /* Badges & Scores */
+        .score-pill {
+            display: inline-block;
+            background: #FDF3F0;
+            color: #BA4E30;
+            font-size: 8pt;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            border: 0.5px solid rgba(186, 78, 48, 0.25);
+            margin-top: 2px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #F7F5F0;
+            color: #2A2A2A;
+            font-size: 7.8pt;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin: 2px 1px;
+            border: 0.5px solid #E0DAD0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="cv-header">
+        <div class="header-main">
+            <h1>LÊ THU TRANG <span class="chinese-name">黎秋妆</span></h1>
+            <div class="header-subtitle">Sinh viên Năm 3 Tiếng Trung Thương Mại (Khóa K63) · ĐH Ngoại Thương (FTU)</div>
+        </div>
+        <div class="header-contact">
+            <div><strong>Email:</strong> lethutrang2302@gmail.com</div>
+            <div><strong>Điểm tích lũy:</strong> GPA 3.82 / 4.0 (Top 3%)</div>
+            <div><strong>Địa điểm:</strong> Hà Nội, Việt Nam</div>
+            <div><strong>WeChat:</strong> lethutrang_2302</div>
+            <div><strong>Website:</strong> lettrang.github.io</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="cv-body">
+        
+        <!-- Left Column -->
+        <aside class="col-left">
+            
+            <h2 class="section-title">Học Vấn</h2>
+            <div class="cv-block">
+                <div class="cv-item-title">Đại học Ngoại Thương (FTU)</div>
+                <div class="cv-item-meta">Tiếng Trung Thương Mại · Khóa 63</div>
+                <div class="cv-item-time">2023 – Dự kiến 2027 (Năm 3)</div>
+                <div class="score-pill">GPA: 3.82 / 4.0 · Top 3%</div>
+                <p class="cv-desc" style="margin-top:4px;">
+                    3 kỳ liên tiếp đạt Học bổng Khuyến khích Học tập loại Xuất sắc.
+                </p>
+            </div>
+
+            <h2 class="section-title">Chứng Chỉ Quốc Tế</h2>
+            <div class="cv-block">
+                <div class="cv-item-title">HSK 6 (CLEC) — 278 / 300</div>
+                <div class="cv-desc">Nghe: 94 · Đọc: 96 · Viết: 88 (Cấp cao nhất)</div>
+            </div>
+            <div class="cv-block">
+                <div class="cv-item-title">HSKK Cao Cấp — 86 / 100</div>
+                <div class="cv-desc">Khẩu ngữ đàm phán & phiên dịch tháp tùng</div>
+            </div>
+            <div class="cv-block">
+                <div class="cv-item-title">BCT (B) Business Chinese</div>
+                <div class="cv-desc">Hán ngữ Thương mại Quốc tế chuẩn hóa</div>
+            </div>
+            <div class="cv-block">
+                <div class="cv-item-title">MOS Master (Microsoft)</div>
+                <div class="cv-desc">Excel Expert · Word Expert · PowerPoint</div>
+            </div>
+            <div class="cv-block">
+                <div class="cv-item-title">IELTS Academic 7.5 (C1)</div>
+                <div class="cv-desc">Listening 8.5 · Reading 8.0 · Song ngữ Anh-Trung</div>
+            </div>
+            <div class="cv-block">
+                <div class="cv-item-title">Incoterms 2020 & L/C (ICC)</div>
+                <div class="cv-desc">Thanh toán quốc tế UCP 600, rủi ro giao hàng</div>
+            </div>
+            <div class="cv-block">
+                <div class="cv-item-title">Logistics VLA / FIATA & Alibaba GDT</div>
+                <div class="cv-desc">Khai hải quan VNACCS, vận tải & TMĐT 1688</div>
+            </div>
+
+            <h2 class="section-title">Kỹ Năng</h2>
+            <div class="cv-block">
+                <div style="font-weight:700; font-size:8.2pt; color:#BA4E30; margin-bottom:2px;">NGOẠI NGỮ:</div>
+                <span class="skill-tag">Tiếng Trung Thương mại</span>
+                <span class="skill-tag">HSK 6</span>
+                <span class="skill-tag">HSKK Cao cấp</span>
+                <span class="skill-tag">IELTS 7.5</span>
+                
+                <div style="font-weight:700; font-size:8.2pt; color:#BA4E30; margin-top:5px; margin-bottom:2px;">NGHIỆP VỤ XNK:</div>
+                <span class="skill-tag">Incoterms 2020</span>
+                <span class="skill-tag">L/C & T/T</span>
+                <span class="skill-tag">Sourcing 1688</span>
+                <span class="skill-tag">Hợp đồng ngoại thương</span>
+                <span class="skill-tag">Bill of Lading</span>
+                <span class="skill-tag">Forwarding</span>
+
+                <div style="font-weight:700; font-size:8.2pt; color:#BA4E30; margin-top:5px; margin-bottom:2px;">CÔNG CỤ SỐ:</div>
+                <span class="skill-tag">MOS Excel Expert</span>
+                <span class="skill-tag">MOS Word Expert</span>
+                <span class="skill-tag">PowerPoint Pitching</span>
+                <span class="skill-tag">WeChat Work</span>
+            </div>
+
+        </aside>
+
+        <!-- Right Column -->
+        <main class="col-right">
+
+            <h2 class="section-title">Mục Tiêu Nghề Nghiệp</h2>
+            <div class="cv-block">
+                <p class="cv-desc">
+                    Sinh viên năm 3 Tiếng Trung Thương Mại Đại học Ngoại Thương (K63) sở hữu năng lực Hán ngữ cấp cao nhất <strong>HSK 6 (278/300)</strong>, <strong>MOS Master</strong> và <strong>IELTS 7.5</strong>. Tìm kiếm vị trí <strong>Thực tập sinh Quản lý Nguồn cung (Sourcing) / Xuất Nhập Khẩu</strong>; ứng dụng tư duy kinh tế ngoại thương, kỹ năng đàm phán song ngữ Trung — Việt và mô hình phân tích dữ liệu logistics để tối ưu chi phí chuỗi cung ứng cho doanh nghiệp.
+                </p>
+            </div>
+
+            <h2 class="section-title">Kinh Nghiệm Thực Tiễn</h2>
+            
+            <div class="cv-block">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                    <div class="cv-item-title">Thực tập sinh Sourcing & Quản lý Đơn hàng</div>
+                    <div class="cv-item-time">06/2025 – Hiện tại</div>
+                </div>
+                <div class="cv-item-meta">Công ty TNHH Tiếp vận & Thương mại Quốc tế Trans-Asia Logistics</div>
+                <ul class="cv-list">
+                    <li>Trực tiếp liên hệ, đàm phán hợp đồng cung ứng với <strong>hơn 40 nhà xưởng</strong> sản xuất tại Quảng Đông, Chiết Giang qua 1688 & WeChat Work.</li>
+                    <li>Thương thảo thành công mức chiết khấu giá xuất xưởng (EXW) <strong>giảm 6 – 8%</strong> cho các lô hàng mẫu và đơn hàng chính ngạch về Việt Nam.</li>
+                    <li>Ứng dụng MOS Excel xây dựng Dashboard theo dõi hành trình hàng hóa từ kho xưởng Trung Quốc về Cảng Hải Phòng và Cửa khẩu Hữu Nghị theo thời gian thực.</li>
+                </ul>
+            </div>
+
+            <div class="cv-block">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                    <div class="cv-item-title">Cộng tác viên Phiên dịch Thương mại Song ngữ</div>
+                    <div class="cv-item-time">2024 – 2025</div>
+                </div>
+                <div class="cv-item-meta">Vietnam Expo & Diễn đàn Giao thương Doanh nghiệp Việt — Trung</div>
+                <ul class="cv-list">
+                    <li>Phiên dịch trực tiếp tại bàn đàm phán các thỏa thuận cung ứng dây chuyền thiết bị chế biến thực phẩm và vật liệu sinh học cho đoàn doanh nghiệp Giang Tô, Tứ Xuyên.</li>
+                    <li>Biên dịch bản ghi nhớ hợp tác (MOU) song ngữ Trung — Việt chuẩn xác về thuật ngữ pháp lý thương mại quốc tế.</li>
+                </ul>
+            </div>
+
+            <div class="cv-block">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                    <div class="cv-item-title">Phó Trưởng Ban Đối ngoại</div>
+                    <div class="cv-item-time">2024 – 2025</div>
+                </div>
+                <div class="cv-item-meta">Câu lạc bộ Tiếng Trung Trường Đại học Ngoại Thương (CFC — FTU)</div>
+                <ul class="cv-list">
+                    <li>Kết nối thành công hơn 8 nhà tài trợ doanh nghiệp, đạt tổng giá trị tài trợ <strong>hơn 90 triệu đồng</strong> cho chuỗi sự kiện đối ngoại thường niên.</li>
+                    <li>Đồng chủ trì tổ chức Workshop <em>"Bứt phá HSK 6 & Đàm phán thương mại Hoa ngữ"</em> với hơn 350 sinh viên tham gia.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Dự Án & Nghiên Cứu Khoa Học</h2>
+            
+            <div class="cv-block">
+                <div class="cv-item-title">Đề tài NCKH Sinh viên Cấp Trường FTU 2025 (Giải Nhì)</div>
+                <div class="cv-desc">
+                    <em>"Giải pháp tối ưu hóa chi phí chuỗi cung ứng cho các doanh nghiệp TMĐT xuyên biên giới nhập khẩu từ xưởng nội địa Trung Quốc"</em> — Xây dựng mô hình Excel phân tích điểm hòa vốn, cước vận tải đường bộ - đường biển, giảm 12% chi phí lưu kho vận hành.
+                </div>
+            </div>
+
+            <div class="cv-block">
+                <div class="cv-item-title">Cẩm nang 120+ Mẫu Thư tín & Hợp đồng Ngoại thương Song ngữ</div>
+                <div class="cv-desc">
+                    Hệ thống hóa biểu mẫu thư hỏi hàng (Inquiry), báo giá (Quotation), Purchase Order, thỏa thuận thanh toán L/C và xử lý tranh chấp (Claim) bằng MOS Word.
+                </div>
+            </div>
+
+            <h2 class="section-title">Thành Tích & Giải Thưởng Tiêu Biểu</h2>
+            <ul class="cv-list">
+                <li><strong>Quán quân (Champion):</strong> Cuộc thi Hùng biện Tiếng Trung Thương Mại Toàn quốc 2025.</li>
+                <li><strong>Học bổng Khuyến khích Học tập FTU loại Xuất sắc:</strong> 3 kỳ học liên tiếp (GPA 3.82/4.0).</li>
+                <li><strong>Giải Nhì NCKH Sinh viên Cấp Trường FTU:</strong> Hội nghị NCKH Sinh viên Ngoại Thương 2025.</li>
+                <li><strong>Top 5 Sinh viên Tiêu biểu:</strong> Khoa Tiếng Trung Quốc — Trường Đại học Ngoại Thương.</li>
+            </ul>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
