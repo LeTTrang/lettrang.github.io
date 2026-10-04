@@ -2005,29 +2005,91 @@ h1, h2, h3, h4, .font-serif {
 
 /* --- 20. Print Stylesheet for Professional CV --- */
 @media print {
-  body::before, #particle-canvas, #cursor-dot, #cursor-ring, .site-header, .side-index, #scroll-progress, #scroll-to-top, .breath-container, .hero-cta-group, .contact-quick-actions, .mobile-menu-btn, .icon-btn, .modal-close, button {
+  /* Strictly hide all main website elements */
+  body::before,
+  #particle-canvas,
+  #cursor-dot,
+  #cursor-ring,
+  .site-header,
+  .side-index,
+  #scroll-progress,
+  #scroll-to-top,
+  .breath-container,
+  .hero,
+  .diag-divider,
+  .main-content,
+  .footer,
+  .mobile-drawer,
+  .mobile-menu-btn,
+  .icon-btn,
+  .modal-close,
+  .modal-actions,
+  button {
     display: none !important;
   }
-  
+
   body {
     background: #FFFFFF !important;
     color: #111111 !important;
-    font-size: 12pt;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .modal-overlay {
+  /* Make ONLY the CV modal and its contents visible */
+  .modal-overlay#cv-modal {
     position: static !important;
-    background: none !important;
-    padding: 0 !important;
+    display: block !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     opacity: 1 !important;
     visibility: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
   }
 
-  .modal-content {
+  #cv-printable-area {
+    display: block !important;
+    position: static !important;
     box-shadow: none !important;
     border: none !important;
-    padding: 0 !important;
+    padding: 10px 15px !important;
+    margin: 0 !important;
+    max-width: 100% !important;
     max-height: none !important;
+    overflow: visible !important;
     transform: none !important;
+    background: #FFFFFF !important;
+    color: #111111 !important;
+    border-radius: 0 !important;
+  }
+
+  #cv-printable-area h2,
+  #cv-printable-area h3,
+  #cv-printable-area h4 {
+    color: #111111 !important;
+  }
+
+  #cv-printable-area * {
+    color: #111111 !important;
+    background: transparent !important;
+  }
+
+  #cv-printable-area .cv-header-rule {
+    border-bottom: 2px solid #BA4E30 !important;
+  }
+
+  #cv-printable-area .cv-section-title {
+    border-left: 3px solid #BA4E30 !important;
+    color: #BA4E30 !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 12mm 15mm 12mm 15mm;
   }
 }
+
