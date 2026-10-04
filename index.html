@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lê Thu Trang — Sinh viên Năm 3 chuyên ngành Tiếng Trung Thương Mại, Trường Đại học Ngoại Thương (FTU). Đạt HSK 6 (278/300), HSKK Cao cấp, BCT, MOS Master, IELTS 7.5. Định hướng Quản lý Nguồn cung Sourcing và Xuất Nhập Khẩu.">
+    <meta name="author" content="Lê Thu Trang">
+    <meta name="keywords" content="Lê Thu Trang, FTU, Tiếng Trung Thương Mại, HSK 6, Sourcing, Logistics, Xuất Nhập Khẩu, Ngoại Thương, Portfolio">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lê Thu Trang | Tiếng Trung Thương Mại · FTU Portfolio">
+    <meta property="og:description" content="Hồ sơ năng lực sinh viên Năm 3 Đại học Ngoại Thương — HSK 6 (278/300), MOS Master, IELTS 7.5, Sourcing & Xuất Nhập Khẩu.">
+    <meta property="og:image" content="assets/images/thu-trang.jpg">
+
+    <title>Lê Thu Trang | Tiếng Trung Thương Mại · FTU Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>妆</text></svg>">
+
+    <!-- Google Fonts: Fraunces, Plus Jakarta Sans, Noto Serif SC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Noto+Serif+SC:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Magnetic Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Global Trade Constellation Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Side Vertical Index Navigation -->
+    <aside class="side-index">
+        <a href="#about" data-section="about" data-hover><span class="nav-indicator"></span>01 — Giới thiệu</a>
+        <a href="#education" data-section="education" data-hover><span class="nav-indicator"></span>02 — Học vấn</a>
+        <a href="#certificates" data-section="certificates" data-hover><span class="nav-indicator"></span>03 — Chứng chỉ</a>
+        <a href="#experience" data-section="experience" data-hover><span class="nav-indicator"></span>04 — Kinh nghiệm</a>
+        <a href="#awards" data-section="awards" data-hover><span class="nav-indicator"></span>05 — Thành tích</a>
+        <a href="#skills" data-section="skills" data-hover><span class="nav-indicator"></span>06 — Kỹ năng</a>
+        <a href="#projects" data-section="projects" data-hover><span class="nav-indicator"></span>07 — Dự án</a>
+        <a href="#insights" data-section="insights" data-hover><span class="nav-indicator"></span>08 — Nghiên cứu</a>
+        <a href="#connect" data-section="connect" data-hover><span class="nav-indicator"></span>09 — Liên hệ</a>
+    </aside>
+
+    <!-- Site Header -->
+    <header class="site-header">
+        <a href="#hero" class="header-logo" data-hover>
+            <span class="italic font-light">thu trang</span> <span class="font-normal">lê</span>
+            <span class="logo-badge">FTU · K62</span>
+        </a>
+
+        <nav class="header-nav">
+            <a href="#about" data-hover class="link-underline">Giới thiệu</a>
+            <a href="#education" data-hover class="link-underline">Học vấn</a>
+            <a href="#certificates" data-hover class="link-underline">Chứng chỉ</a>
+            <a href="#experience" data-hover class="link-underline">Kinh nghiệm</a>
+            <a href="#awards" data-hover class="link-underline">Thành tích</a>
+            <a href="#skills" data-hover class="link-underline">Kỹ năng</a>
+            <a href="#projects" data-hover class="link-underline">Dự án</a>
+            <a href="#insights" data-hover class="link-underline">Bài viết</a>
+            <a href="#connect" data-hover class="link-underline">Liên hệ</a>
+        </nav>
+
+        <div class="header-actions">
+            <!-- Theme Switcher -->
+            <button type="button" id="theme-toggle" class="icon-btn" title="Chuyển chế độ Sáng / Tối" data-hover>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+            </button>
+
+            <!-- Sound FX Switcher -->
+            <button type="button" id="sound-toggle" class="icon-btn" title="Âm thanh tương tác" data-hover>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+            </button>
+
+            <!-- Quick CV Action -->
+            <button type="button" id="open-cv-nav" class="btn btn-secondary btn-sm" data-hover>
+                <span>Hồ sơ CV</span>
+            </button>
+
+            <!-- Mobile Hamburger -->
+            <button type="button" id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Mở menu điều hướng">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Đóng menu">&times;</button>
+        <nav>
+            <a href="#about">01 — Giới thiệu</a>
+            <a href="#education">02 — Học vấn</a>
+            <a href="#certificates">03 — Chứng chỉ</a>
+            <a href="#experience">04 — Kinh nghiệm</a>
+            <a href="#awards">05 — Thành tích</a>
+            <a href="#skills">06 — Kỹ năng</a>
+            <a href="#projects">07 — Dự án</a>
+            <a href="#insights">08 — Bài viết</a>
+            <a href="#connect">09 — Liên hệ</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Ambient Breathing Shapes -->
+        <div class="breath-container" style="top:-8%; right:-12%; width:820px; height:820px;">
+            <div class="breath-blob terracotta" style="width:480px; height:480px; top:60px; left:140px;"></div>
+            <div class="breath-blob sage" style="width:420px; height:420px; top:230px; left:300px;"></div>
+            <div class="breath-blob brass" style="width:360px; height:360px; top:390px; left:70px;"></div>
+        </div>
+
+        <div class="hero-inner">
+            <div class="hero-main">
+                <div class="hero-eyebrow reveal">
+                    <span class="bar"></span>
+                    <span>Third-Year Student · Business Chinese · Foreign Trade University · Hanoi</span>
+                </div>
+                <h1 class="hero-name reveal reveal-d1">
+                    Thu Trang<br>
+                    <span class="italic font-light" style="color: var(--terracotta);">Lê.</span>
+                    <span style="font-family: var(--font-chinese); font-size: 0.45em; color: var(--text-muted); font-weight: normal; margin-left: 16px;">黎秋妆</span>
+                </h1>
+                <p class="hero-intro reveal reveal-d2">
+                    Sinh viên <strong>năm 3</strong> chuyên ngành <strong>Tiếng Trung Thương Mại</strong> tại <strong>Đại học Ngoại Thương (FTU)</strong>. Sở hữu năng lực Hán ngữ cấp độ cao nhất <span class="accent-tag">HSK 6 (278/300)</span>, <span class="accent-tag">HSKK Cao cấp</span>, chứng chỉ Hán ngữ Thương mại quốc tế <span class="accent-tag">BCT</span>, chứng chỉ tin học văn phòng quốc tế <span class="accent-tag">MOS Master</span> và <span class="accent-tag">IELTS 7.5</span>. Đam mê và định hướng phát triển chuyên sâu trong Quản lý Chuỗi cung ứng (Sourcing), Xuất Nhập Khẩu và Đàm phán Thương mại Quốc tế Việt — Trung.
+                </p>
+                <div class="hero-tagline reveal reveal-d3">
+                    <span id="typewriter-text"></span><span class="cursor-blink"></span>
+                </div>
+                <div class="hero-cta-group reveal reveal-d4">
+                    <a href="#about" class="btn btn-primary" data-hover>Khám phá Portfolio</a>
+                    <button type="button" id="open-cv-modal" class="btn btn-secondary" data-hover>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                        Xem & Tải CV (PDF)
+                    </button>
+                    <a href="#connect" class="btn btn-secondary" data-hover>Kết nối hợp tác</a>
+                </div>
+            </div>
+
+            <!-- Quick Metadata Aside -->
+            <aside class="hero-aside reveal reveal-d2">
+                <div class="hero-aside-label">
+                    <span class="bar"></span>
+                    <span>Hồ sơ tóm tắt</span>
+                </div>
+                <ul class="hero-aside-list">
+                    <li>
+                        <span class="ha-k">Hiện tại</span>
+                        <span>Sinh viên Năm 3 (Khóa K62 · FTU)</span>
+                    </li>
+                    <li>
+                        <span class="ha-k">Chuyên ngành</span>
+                        <span class="chinese-text">Tiếng Trung Thương Mại (商务汉语)</span>
+                    </li>
+                    <li>
+                        <span class="ha-k">Học vấn & Điểm số</span>
+                        <span>Đại học Ngoại Thương (GPA: 3.82 / 4.0)</span>
+                    </li>
+                    <li>
+                        <span class="ha-k">Chứng chỉ trọng điểm</span>
+                        <span>HSK 6 (278/300) · BCT · MOS Master · IELTS 7.5</span>
+                    </li>
+                    <li>
+                        <span class="ha-k">Năm sinh & Nơi ở</span>
+                        <span>23/02/2006 · Hà Nội, Việt Nam</span>
+                    </li>
+                    <li>
+                        <span class="ha-k">Định hướng 2026</span>
+                        <span>Thực tập sinh Sourcing / Xuất Nhập Khẩu</span>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="scroll-cue reveal reveal-d3">
+            <a href="#about" data-hover>
+                <span>Bắt đầu khám phá</span>
+                <span class="line"></span>
+                <span>2023 — 2027</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="diag-divider"></div>
+
+    <main class="main-content">
+
+        <!-- § 01 — Giới thiệu (About) -->
+        <section id="about" class="section">
+            <div class="about-head reveal">
+                <div class="avatar-wrapper">
+                    <img src="assets/images/thu-trang.jpg" 
+                         alt="Lê Thu Trang" 
+                         class="about-avatar"
+                         onerror="this.src='https://ui-avatars.com/api/?name=Thu+Trang&background=D4C8B0&color=1C1814&size=300'">
+                    <span class="avatar-badge-chinese" title="Nhấp để nghe phát âm tên Hán Việt: 黎秋妆">妆</span>
+                </div>
+                <div class="about-head-text">
+                    <div class="section-eyebrow"><span class="bar"></span><span>§ 01 — Giới thiệu</span></div>
+                    <h2 class="section-heading" style="margin-bottom:0;">Nền tảng Hán ngữ vững vàng, với tư duy kinh tế sắc bén.</h2>
+                    <p class="chinese-quote">“博学笃行，行稳致远” — Vững vàng tri thức, tự tin vươn xa.</p>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="reveal reveal-d1">
+                        Xin chào! Tôi là <strong>Lê Thu Trang</strong>, sinh năm 2006, hiện đang là <strong>sinh viên năm 3</strong> chuyên ngành <strong>Tiếng Trung Thương Mại</strong> tại <strong>Trường Đại học Ngoại Thương Hà Nội (FTU)</strong>.
+                    </p>
+                    <p class="reveal reveal-d2">
+                        Trong suốt 3 năm học tập dưới mái trường Ngoại Thương với điểm trung bình tích lũy <strong>GPA 3.82/4.0 (Top 3% toàn khóa)</strong>, tôi không ngừng mở rộng năng lực song ngữ và chuyên môn thương mại quốc tế. Tôi đã xuất sắc chinh phục chứng chỉ <strong>HSK 6 với số điểm 278/300</strong>, kỳ thi khẩu ngữ <strong>HSKK Cao cấp</strong> cùng chứng chỉ Hán ngữ Thương mại Quốc tế <strong>BCT</strong>.
+                    </p>
+                    <p class="reveal reveal-d3">
+                        Bên cạnh thế mạnh ngôn ngữ, tôi trang bị hệ thống kỹ năng số và nghiệp vụ ngoại thương thực chiến: danh hiệu <strong>MOS Master (Microsoft Office Specialist)</strong> với kỹ năng phân tích bảng tính Excel chuyên sâu, chứng chỉ đào tạo <strong>Incoterms 2020 & Thanh toán Quốc tế (ICC Academy)</strong>, nghiệp vụ <strong>Logistics VLA/FIATA</strong> và chứng chỉ <strong>Alibaba Global Digital Talent</strong> về thương mại điện tử xuyên biên giới.
+                    </p>
+
+                    <div class="highlight-box reveal reveal-d4">
+                        <p>
+                            <strong>Mục tiêu nghề nghiệp:</strong> Trở thành Chuyên viên Quản lý Nguồn cung (Sourcing Specialist), Chuyên viên Xuất Nhập Khẩu và Đàm phán Hợp đồng song ngữ Trung — Việt; đóng vai trò cầu nối chiến lược giúp doanh nghiệp tối ưu chi phí chuỗi cung ứng và mở rộng thị phần.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-card reveal-scale reveal-d1" data-card>
+                        <span class="stat-number" id="counter-hsk">278 / 300</span>
+                        <span class="stat-label">HSK 6 CLEC</span>
+                        <span class="stat-desc">Cấp độ cao nhất Hán ngữ quốc tế · HSKK Cao cấp</span>
+                    </div>
+                    <div class="stat-card reveal-scale reveal-d2" data-card>
+                        <span class="stat-number" id="counter-gpa">3.82</span>
+                        <span class="stat-label">GPA Ngoại Thương</span>
+                        <span class="stat-desc">Top 3% sinh viên tiêu biểu Khoa Tiếng Trung</span>
+                    </div>
+                    <div class="stat-card reveal-scale reveal-d3" data-card>
+                        <span class="stat-number">MOS Master</span>
+                        <span class="stat-label">Microsoft Tin học</span>
+                        <span class="stat-desc">Excel Expert · Word Expert · PowerPoint</span>
+                    </div>
+                    <div class="stat-card reveal-scale reveal-d4" data-card>
+                        <span class="stat-number">IELTS 7.5</span>
+                        <span class="stat-label">Song ngữ Trung — Anh</span>
+                        <span class="stat-desc">Listening 8.5 · Reading 8.0 · C1 CEFR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 02 — Học vấn (Education) -->
+        <section id="education" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 02 — Học vấn & Quá trình đào tạo</span></div>
+            <h2 class="section-heading reveal reveal-d1">Hành trình học tập tại cái nôi Ngoại Thương.</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-period">2023 – Dự kiến 2027 (Hiện là Sinh viên Năm 3)</div>
+                    <div class="timeline-content">
+                        <h3>Trường Đại học Ngoại Thương (FTU) — Cơ sở Hà Nội</h3>
+                        <p class="subtitle">Cử nhân Tiếng Trung Thương Mại (Business Chinese) · Khóa 62</p>
+                        <p class="details">Khoa Tiếng Trung Quốc — Chương trình cử nhân định hướng thực chiến cao cấp, kết hợp chiều sâu ngôn ngữ Hoa ngữ với tư duy kinh tế, tài chính và logistics hiện đại.</p>
+                        <ul class="accent-list">
+                            <li><strong>Kết quả học tập:</strong> Điểm trung bình tích lũy <strong>GPA: 3.82 / 4.0</strong>; liên tục đạt Học bổng Khuyến khích Học tập loại Xuất sắc của trường 3 kỳ liên tiếp.</li>
+                            <li><strong>Học phần chuyên ngành hoàn thành:</strong> Tiếng Trung Thương Mại nâng cao (高级商务汉语), Thư tín và Soạn thảo Hợp đồng Thương mại, Biên phiên dịch Kinh tế — Thương mại, Đàm phán Thương mại Quốc tế, Kinh tế Quốc tế, Thanh toán Quốc tế (L/C, T/T), Incoterms 2020, Nghiệp vụ Xuất Nhập Khẩu và Hải quan.</li>
+                            <li><strong>Hoạt động học thuật:</strong> Thành viên nòng cốt Ban Chuyên môn Câu lạc bộ Tiếng Trung FTU; Trưởng nhóm nghiên cứu đề tài NCKH Sinh viên cấp Trường đạt Giải Nhì 2025.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-d1">
+                    <div class="timeline-period">2020 – 2023</div>
+                    <div class="timeline-content">
+                        <h3>Trường Trung học Phổ thông</h3>
+                        <p class="subtitle">Tốt nghiệp THPT — Khối D01 / D04</p>
+                        <ul class="accent-list">
+                            <li>Học sinh Giỏi toàn diện suốt 3 năm học với điểm tổng kết môn Ngoại ngữ trên 9.5.</li>
+                            <li>Đạt giải Ba kỳ thi Học sinh Giỏi cấp Tỉnh/Thành phố môn Ngoại ngữ.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 03 — Chứng chỉ Quốc tế (Certificates) -->
+        <section id="certificates" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 03 — Chứng chỉ Quốc tế & Chuyên ngành</span></div>
+            <h2 class="section-heading reveal reveal-d1">Hồ sơ chứng chỉ chuẩn hóa cho ngành Thương mại.</h2>
+            
+            <!-- Category Filter Tabs -->
+            <div class="certs-filter reveal reveal-d2">
+                <button type="button" class="filter-btn active" data-filter="all" data-hover>Tất cả chứng chỉ (8)</button>
+                <button type="button" class="filter-btn" data-filter="chinese" data-hover>Hán ngữ & Khẩu ngữ</button>
+                <button type="button" class="filter-btn" data-filter="trade" data-hover>Ngoại thương & Logistics</button>
+                <button type="button" class="filter-btn" data-filter="tech" data-hover>Tin học & Tiếng Anh</button>
+            </div>
+
+            <div class="certs-grid">
+                <!-- HSK 6 Card -->
+                <div class="cert-card featured reveal" data-card data-category="chinese">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                            </div>
+                            <div>
+                                <h3>HSK 6 (汉语水平考试六级) — 278 / 300 Điểm</h3>
+                                <div class="cert-issuer">Tổ chức cấp: CLEC / Bộ Giáo dục Trung Quốc · Hiệu lực quốc tế</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-gold">Cấp độ cao nhất</div>
+                    </div>
+                    <div class="cert-score-highlight">
+                        <span class="score-value">278 / 300</span>
+                        <span class="score-label">(Nghe: 94 · Đọc: 96 · Viết: 88)</span>
+                    </div>
+                    <p class="cert-desc">
+                        Đạt cấp độ cao nhất trong khung chuẩn năng lực Hán ngữ quốc tế với điểm số xuất sắc. Khẳng định trình độ ngôn ngữ tương đương người bản xứ: tiếp thu trọn vẹn thông tin kinh tế, đọc hiểu báo cáo thường niên, thẩm định hợp đồng ngoại thương phức tạp và phản biện tự tin trong các phiên đàm phán thương vụ.
+                    </p>
+                    <div class="cert-tags">
+                        <span>CLEC Certified</span>
+                        <span>Đọc hiểu Kinh tế</span>
+                        <span>Biên dịch Hợp đồng</span>
+                        <span>Thương đàm Quốc tế</span>
+                    </div>
+                </div>
+
+                <!-- HSKK Cao cấp Card -->
+                <div class="cert-card reveal reveal-d1" data-card data-category="chinese">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                            </div>
+                            <div>
+                                <h3>HSKK Cao cấp (汉语水平口语考试高级)</h3>
+                                <div class="cert-issuer">Tổ chức cấp: CLEC · Đạt 86 / 100 Điểm</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-gold">Khẩu ngữ Cao cấp</div>
+                    </div>
+                    <p class="cert-desc">
+                        Chứng nhận khả năng diễn đạt khẩu ngữ lưu loát, phản xạ tức thì trong môi trường đàm phán kinh doanh, hội đàm thương mại và phiên dịch tháp tùng các đoàn doanh nghiệp Trung Quốc tại Việt Nam.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Phản xạ đàm phán</span>
+                        <span>Phiên dịch tháp tùng</span>
+                        <span>Thuyết trình thương vụ</span>
+                    </div>
+                </div>
+
+                <!-- BCT Business Chinese Test Card -->
+                <div class="cert-card reveal reveal-d2" data-card data-category="chinese">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            </div>
+                            <div>
+                                <h3>BCT (B) — Business Chinese Test</h3>
+                                <div class="cert-issuer">Kỳ thi Hán ngữ Thương mại Quốc tế (CLEC / Hanban)</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-blue">Thương Mại Chuẩn Hóa</div>
+                    </div>
+                    <p class="cert-desc">
+                        Kỳ thi chuyên biệt đo lường năng lực ứng dụng tiếng Trung trong môi trường kinh doanh toàn cầu: soạn thảo công văn, thư chào giá (Quotation), xử lý khiếu nại (Claim) và đàm phán điều khoản hợp đồng.
+                    </p>
+                    <div class="cert-tags">
+                        <span>BCT Grade B+</span>
+                        <span>Thư tín 商务信件</span>
+                        <span>Thuật ngữ Ngoại thương</span>
+                    </div>
+                </div>
+
+                <!-- MOS Master Card -->
+                <div class="cert-card reveal reveal-d1" data-card data-category="tech">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                            </div>
+                            <div>
+                                <h3>MOS Master (Microsoft Office Specialist Master)</h3>
+                                <div class="cert-issuer">Tổ chức cấp: Microsoft & Certiport</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-blue">Microsoft Certified</div>
+                    </div>
+                    <p class="cert-desc">
+                        Danh hiệu cao nhất trong hệ thống văn phòng Microsoft: <strong>Excel Expert</strong> (Data Modelling, PivotTable, Dashboard chi phí logistics), <strong>Word Expert</strong> (Quy chuẩn văn bản hợp đồng) và <strong>PowerPoint</strong>.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Excel Expert</span>
+                        <span>Word Expert</span>
+                        <span>PowerPoint Specialist</span>
+                        <span>Data Modeling</span>
+                    </div>
+                </div>
+
+                <!-- IELTS 7.5 Card -->
+                <div class="cert-card reveal reveal-d2" data-card data-category="tech">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            </div>
+                            <div>
+                                <h3>IELTS Academic 7.5 (C1 CEFR)</h3>
+                                <div class="cert-issuer">Tổ chức cấp: IDP Education · Song ngữ Trung — Anh</div>
+                            </div>
+                        </div>
+                        <div class="badge">Bilingual Fluency</div>
+                    </div>
+                    <div class="cert-score-highlight">
+                        <span class="score-value">Overall 7.5</span>
+                        <span class="score-label">(Listening: 8.5 · Reading: 8.0 · Writing: 7.0 · Speaking: 7.0)</span>
+                    </div>
+                    <p class="cert-desc">
+                        Năng lực sử dụng tiếng Anh thương mại thành thạo trong môi trường làm việc đa quốc gia, phối hợp nhịp nhàng giữa hai ngôn ngữ kinh tế lớn nhất thế giới để xử lý chứng từ quốc tế.
+                    </p>
+                    <div class="cert-tags">
+                        <span>IELTS 7.5 C1</span>
+                        <span>Business English</span>
+                        <span>Giao tiếp Đa phương</span>
+                    </div>
+                </div>
+
+                <!-- Logistics VLA / FIATA Card -->
+                <div class="cert-card reveal reveal-d3" data-card data-category="trade">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><circle cx="7" cy="17" r="2"/><path d="M15 17h2l3-3v-5h-6v8"/><circle cx="17" cy="17" r="2"/></svg>
+                            </div>
+                            <div>
+                                <h3>Nghiệp vụ Logistics & Vận tải Quốc tế</h3>
+                                <div class="cert-issuer">Viện Nghiên cứu VLI & Hiệp hội Logistics Việt Nam (VLA)</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-sage">Nghiệp vụ Ngoại Thương</div>
+                    </div>
+                    <p class="cert-desc">
+                        Đào tạo chuyên sâu về vận tải hàng hóa đường biển / đường bộ / đường sắt Việt — Trung, quy trình khai báo hải quan điện tử VNACCS/VCIS, kiểm soát vận đơn Bill of Lading (B/L) và kho bãi.
+                    </p>
+                    <div class="cert-tags">
+                        <span>VLA Certified</span>
+                        <span>Khai Hải Quan VNACCS</span>
+                        <span>Bill of Lading</span>
+                        <span>Forwarding</span>
+                    </div>
+                </div>
+
+                <!-- Incoterms 2020 & L/C ICC Academy Card -->
+                <div class="cert-card reveal reveal-d4" data-card data-category="trade">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+                            </div>
+                            <div>
+                                <h3>Incoterms 2020 & Thanh toán Quốc tế L/C</h3>
+                                <div class="cert-issuer">ICC Academy (Phòng Thương mại Quốc tế)</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-gold">Thương Mại Quốc Tế</div>
+                    </div>
+                    <p class="cert-desc">
+                        Nắm vững 11 điều kiện giao hàng Incoterms 2020 (EXW, FOB, CIF, DDP...), ranh giới chuyển giao rủi ro, phân bổ chi phí và quy trình thẩm định bộ chứng từ thanh toán tín dụng chứng từ UCP 600.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Incoterms 2020</span>
+                        <span>Thanh toán L/C</span>
+                        <span>UCP 600</span>
+                        <span>Quản trị rủi ro</span>
+                    </div>
+                </div>
+
+                <!-- Alibaba GDT Cross-Border E-commerce Card -->
+                <div class="cert-card reveal reveal-d5" data-card data-category="trade">
+                    <div class="cert-header">
+                        <div class="cert-icon-title">
+                            <div class="cert-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg>
+                            </div>
+                            <div>
+                                <h3>Alibaba GDT — Cross-Border E-Commerce</h3>
+                                <div class="cert-issuer">Alibaba Global Initiatives (AGI)</div>
+                            </div>
+                        </div>
+                        <div class="badge badge-blue">TMĐT Xuyên Biên Giới</div>
+                    </div>
+                    <p class="cert-desc">
+                        Kỹ năng vận hành sàn thương mại điện tử B2B quốc tế, chiến lược khảo sát xưởng sản xuất, đàm phán mua buôn (Sourcing) trên nền tảng 1688 / Taobao / Alibaba.com và quy trình fulfillment.
+                    </p>
+                    <div class="cert-tags">
+                        <span>Alibaba GDT</span>
+                        <span>Nguồn hàng 1688</span>
+                        <span>Cross-Border Logistics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 04 — Kinh nghiệm thực tiễn (Experience) -->
+        <section id="experience" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 04 — Kinh nghiệm thực tiễn & Thực tập</span></div>
+            <h2 class="section-heading reveal reveal-d1">Vận dụng tri thức vào môi trường doanh nghiệp.</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-period">Tháng 06/2025 – Hiện tại</div>
+                    <div class="timeline-content">
+                        <h3>Thực tập sinh Quản lý Đơn hàng & Tìm nguồn cung (Sourcing Intern)</h3>
+                        <p class="subtitle">Công ty TNHH Tiếp vận & Thương mại Quốc tế Trans-Asia Logistics</p>
+                        <p class="details">Phụ trách mảng tìm kiếm đối tác cung ứng và đàm phán hợp đồng mua sỉ từ các xưởng sản xuất tại Quảng Đông, Chiết Giang và Giang Tô (Trung Quốc).</p>
+                        <ul class="accent-list">
+                            <li>Trực tiếp làm việc với hơn 40 nhà xưởng sản xuất thiết bị gia dụng và phụ kiện trên nền tảng 1688 và WeChat Work bằng tiếng Trung thương mại.</li>
+                            <li>Đàm phán thành công mức chiết khấu giá xuất xưởng (EXW) trung bình giảm 6–8% cho các lô hàng mẫu và đơn hàng chính ngạch về Việt Nam.</li>
+                            <li>Sử dụng MOS Excel xây dựng Dashboard theo dõi hành trình đơn hàng từ kho xưởng Trung Quốc đến Cửa khẩu Hữu Nghị và Cảng Hải Phòng, cập nhật tình trạng hải quan theo thời gian thực.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-d1">
+                    <div class="timeline-period">2024 – 2025</div>
+                    <div class="timeline-content">
+                        <h3>Cộng tác viên Phiên dịch Thương mại Song ngữ Trung — Việt</h3>
+                        <p class="subtitle">Hội chợ Thương mại Quốc tế Vietnam Expo & Diễn đàn Giao thương Doanh nghiệp Việt - Trung</p>
+                        <p class="details">Thực hiện nhiệm vụ phiên dịch tháp tùng và đàm phán thương vụ cho các đoàn đại biểu doanh nghiệp đến từ tỉnh Giang Tô, Tứ Xuyên và Sơn Đông.</p>
+                        <ul class="accent-list">
+                            <li>Phiên dịch trực tiếp tại bàn đàm phán các thỏa thuận cung ứng dây chuyền máy móc chế biến thực phẩm và vật liệu đóng gói sinh học.</li>
+                            <li>Hỗ trợ dịch thuật tài liệu giới thiệu năng lực doanh nghiệp, biên dịch bản ghi nhớ hợp tác (MOU) song ngữ Trung — Việt chuẩn xác về mặt pháp lý thương mại.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-d2">
+                    <div class="timeline-period">2024 – 2025</div>
+                    <div class="timeline-content">
+                        <h3>Phó Trưởng Ban Đối ngoại</h3>
+                        <p class="subtitle">Câu lạc bộ Tiếng Trung Trường Đại học Ngoại Thương (CFC — FTU)</p>
+                        <p class="details">Chủ trì công tác đối ngoại, tìm kiếm tài trợ doanh nghiệp và tổ chức các sự kiện học thuật kết nối sinh viên với thị trường lao động FDI.</p>
+                        <ul class="accent-list">
+                            <li>Kết nối thành công hơn 8 nhà tài trợ doanh nghiệp và trung tâm tiếng Trung uy tín tại Hà Nội, đạt giá trị tài trợ hơn 90 triệu đồng cho chuỗi sự kiện thường niên.</li>
+                            <li>Đồng chủ trì tổ chức Workshop <em>"Bứt phá HSK 6 & Bí quyết đàm phán thương mại cùng doanh nghiệp Trung Hoa"</em> thu hút hơn 350 sinh viên tham gia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 05 — Thành tích & Giải thưởng (Honors & Awards) -->
+        <section id="awards" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 05 — Thành tích & Giải thưởng</span></div>
+            <h2 class="section-heading reveal reveal-d1">Sự ghi nhận cho nỗ lực không ngừng nghỉ.</h2>
+            
+            <div class="awards-grid">
+                <div class="award-card reveal" data-card>
+                    <div class="award-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="award-content">
+                        <h3>Học bổng Khuyến khích Học tập FTU Xuất sắc</h3>
+                        <div class="award-meta">Trường Đại học Ngoại Thương · 3 Học kỳ liên tiếp (2024 – 2026)</div>
+                        <p class="award-desc">Dành cho top 3% sinh viên có thành tích học tập và điểm rèn luyện cao nhất Khoa Tiếng Trung Quốc với GPA 3.82/4.0.</p>
+                    </div>
+                </div>
+
+                <div class="award-card reveal reveal-d1" data-card>
+                    <div class="award-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <div class="award-content">
+                        <h3>Giải Nhì — Nghiên cứu Khoa học Sinh viên Cấp Trường FTU</h3>
+                        <div class="award-meta">Hội nghị NCKH Sinh viên 2025 · Đại học Ngoại Thương</div>
+                        <p class="award-desc">Đề tài: <em>"Giải pháp tối ưu hóa chi phí chuỗi cung ứng cho các doanh nghiệp TMĐT xuyên biên giới nhập khẩu từ xưởng nội địa Trung Quốc"</em>, được Hội đồng đánh giá xuất sắc.</p>
+                    </div>
+                </div>
+
+                <div class="award-card reveal reveal-d2" data-card>
+                    <div class="award-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                    </div>
+                    <div class="award-content">
+                        <h3>Quán quân — Hùng biện Tiếng Trung Thương Mại Toàn quốc</h3>
+                        <div class="award-meta">National Business Chinese Speech Contest 2025</div>
+                        <p class="award-desc">Vượt qua hơn 120 thí sinh trên toàn quốc với bài hùng biện và phản biện sắc sảo về chủ đề <em>"Tương lai logistics đường sắt liên vận Việt — Trung và cơ hội đột phá kinh tế"</em>.</p>
+                    </div>
+                </div>
+
+                <div class="award-card reveal reveal-d3" data-card>
+                    <div class="award-icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="award-content">
+                        <h3>Top 5 Sinh viên Tiêu biểu Khoa Tiếng Trung Quốc</h3>
+                        <div class="award-meta">Đại học Ngoại Thương · Năm học 2024 — 2025</div>
+                        <p class="award-desc">Khen thưởng vì có đóng góp tích cực cho phong trào học tập, nghiên cứu khoa học và các hoạt động kết nối đối ngoại quốc tế của khoa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 06 — Kỹ năng chuyên môn (Skills) -->
+        <section id="skills" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 06 — Kỹ năng chuyên môn</span></div>
+            <h2 class="section-heading reveal reveal-d1">Bộ kỹ năng toàn diện cho thương mại quốc tế.</h2>
+            
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-category reveal-scale reveal-d1" data-card>
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M22 22h-2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h2v20Z"/><path d="M18 10h-6"/></svg>
+                    </div>
+                    <h3>Ngôn ngữ & Dịch thuật Thương mại</h3>
+                    <p class="skill-category-sub">Năng lực ngôn ngữ chuẩn hóa cho kinh doanh</p>
+                    <div class="skill-tags">
+                        <span>Tiếng Trung Thương Mại (HSK 6)</span>
+                        <span>Khẩu ngữ HSKK Cao cấp</span>
+                        <span>Chứng chỉ BCT Thương mại</span>
+                        <span>IELTS 7.5 Academic</span>
+                        <span>Biên dịch Hợp đồng Ngoại thương</span>
+                        <span>Phiên dịch Thương thảo</span>
+                        <span>Thư tín 商务信件</span>
+                        <span>Văn hóa Doanh nghiệp Hoa ngữ</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-category reveal-scale reveal-d2" data-card>
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+                    </div>
+                    <h3>Nghiệp vụ Xuất Nhập Khẩu & Chuỗi Cung Ứng</h3>
+                    <p class="skill-category-sub">Quy trình giao thương và tiếp vận quốc tế</p>
+                    <div class="skill-tags">
+                        <span>Incoterms 2020 (EXW, FOB, CIF...)</span>
+                        <span>Thanh toán Quốc tế (L/C, T/T, D/P)</span>
+                        <span>Khai Hải quan VNACCS</span>
+                        <span>Vận đơn Bill of Lading (B/L)</span>
+                        <span>Tìm nguồn hàng (Sourcing 1688)</span>
+                        <span>Kiểm soát Chất lượng (QC)</span>
+                        <span>Đàm phán Giá xuất xưởng</span>
+                        <span>Forwarding & Kho vận</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-category reveal-scale reveal-d3" data-card>
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                    </div>
+                    <h3>Tin học Văn phòng & Công nghệ Số</h3>
+                    <p class="skill-category-sub">Hiệu suất số hóa và phân tích thông minh</p>
+                    <div class="skill-tags">
+                        <span>MOS Master Certified</span>
+                        <span>Excel Phân tích Dữ liệu</span>
+                        <span>PivotTable & Dashboard</span>
+                        <span>Word Trình bày Quy chuẩn</span>
+                        <span>PowerPoint Pitching</span>
+                        <span>Alibaba GDT E-Commerce</span>
+                        <span>Thiết kế Canva</span>
+                        <span>Công cụ AI hỗ trợ nghiên cứu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 07 — Dự án & Thực tiễn (Projects) -->
+        <section id="projects" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 07 — Dự án & Thực tiễn</span></div>
+            <h2 class="section-heading reveal reveal-d1">Các dự án và nghiên cứu tiêu biểu.</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal" data-card>
+                    <div class="project-image-wrap">
+                        <img src="assets/images/project-logistics.jpg" alt="Tối ưu hóa chuỗi cung ứng TMĐT xuyên biên giới">
+                    </div>
+                    <div class="project-content-inner">
+                        <div class="project-card-header">
+                            <span class="project-date">2025 – 2026</span>
+                            <div class="badge badge-gold">Đề tài NCKH Giải Nhì FTU</div>
+                        </div>
+                        <h3>Khảo sát & Tối ưu Hóa Chuỗi Cung Ứng Sàn TMĐT Xuyên Biên Giới (1688 / Taobao)</h3>
+                        <p>
+                            Nghiên cứu chu trình sourcing từ hơn 50 nhà xưởng tại Chiết Giang và Quảng Đông về thị trường bán lẻ Việt Nam. Xây dựng mô hình bảng tính Excel phân tích điểm hòa vốn, chi phí cước vận chuyển đường bộ - đường biển và thuế nhập khẩu, giúp giảm 12% chi phí lưu kho vận hành.
+                        </p>
+                        <div class="tech-stack">Nguồn hàng 1688 · Tiếng Trung Thương Mại · Phân tích Chi phí MOS Excel</div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal reveal-d1" data-card>
+                    <div class="project-image-wrap">
+                        <img src="assets/images/project-negotiation.jpg" alt="Giả lập đàm phán hợp đồng ngoại thương">
+                    </div>
+                    <div class="project-content-inner">
+                        <div class="project-card-header">
+                            <span class="project-date">2025</span>
+                            <div class="badge badge-sage">Mô phỏng FTU</div>
+                        </div>
+                        <h3>Giả Lập Đàm Phán Hợp Đồng Ngoại Thương Xuất Khẩu Nông Sản Song Ngữ</h3>
+                        <p>
+                            Đảm nhận vai trò trưởng đoàn đàm phán bên xuất khẩu trong phiên mô phỏng ký kết hợp đồng xuất khẩu sầu riêng và thanh long sang thị trường Thượng Hải. Trực tiếp soạn thảo điều khoản thanh toán bằng L/C không hủy ngang và thỏa thuận điều kiện giao hàng CIF Incoterms 2020 hoàn toàn bằng tiếng Trung.
+                        </p>
+                        <div class="tech-stack">Đàm phán Song ngữ Trung — Việt · Soạn thảo Hợp đồng Ngoại thương · Incoterms 2020</div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal reveal-d2" data-card>
+                    <div class="project-content-inner">
+                        <div class="project-card-header">
+                            <span class="project-date">2025</span>
+                            <div class="badge badge-blue">Tài liệu học thuật</div>
+                        </div>
+                        <h3>Cẩm Nang 120+ Mẫu Thư Tín & Hợp Đồng Doanh Nghiệp Trung — Việt</h3>
+                        <p>
+                            Hệ thống hóa toàn bộ biểu mẫu thư từ đối tác chuẩn mực, bao gồm: Thư hỏi hàng (Inquiry), Báo giá (Quotation), Đặt hàng (Purchase Order), Thỏa thuận thanh toán và Giải quyết tranh chấp thương mại (Claim). Ứng dụng kỹ năng MOS Word xuất bản tài liệu chuẩn quy cách cho sinh viên khối Ngoại thương.
+                        </p>
+                        <div class="tech-stack">Biên dịch Thương mại · MOS Word Chuẩn Quốc tế · Thư tín 商务信件</div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal reveal-d3" data-card>
+                    <div class="project-content-inner">
+                        <div class="project-card-header">
+                            <span class="project-date">2024 – 2025</span>
+                            <div class="badge">Dự án Ngoại Khóa</div>
+                        </div>
+                        <h3>Hệ Thống Thuật Ngữ Song Ngữ Anh — Trung — Việt Cho Ngành Logistics</h3>
+                        <p>
+                            Xây dựng từ điển tra cứu nhanh hơn 800 thuật ngữ chuyên ngành logistics và vận tải biển đa phương thức (B/L, Demurrage, Detention, LCL/FCL, Customs Declaration), hỗ trợ đội ngũ sinh viên và chuyên viên mới vào nghề tra cứu nhanh chóng và chính xác.
+                        </p>
+                        <div class="tech-stack">Thuật ngữ Logistics · Song ngữ Anh — Trung · Quản trị Dữ liệu</div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Interactive Logistics Terminology Widget -->
+            <div class="terminology-widget reveal reveal-d2">
+                <div class="widget-header">
+                    <div>
+                        <div class="badge badge-terracotta" style="margin-bottom:8px;">Công cụ tương tác độc quyền</div>
+                        <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:var(--text-main);">Thuật Ngữ Logistics Song Ngữ Hoa — Việt Thực Chiến</h3>
+                        <p style="font-size:0.9rem; color:var(--text-muted);">Trích xuất từ công trình nghiên cứu hệ thống 800+ thuật ngữ của Lê Thu Trang. Nhấp vào từng thẻ để xem chi tiết và phát âm.</p>
+                    </div>
+                </div>
+                
+                <div id="term-active-detail" style="background:var(--bg-surface-elevated); border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:24px; margin-bottom:24px;">
+                    <!-- Dynamically populated by JS -->
+                </div>
+
+                <div class="terms-container" id="terms-container">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 08 — Bài viết & Nghiên cứu (Insights) -->
+        <section id="insights" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 08 — Góc bài viết & Nghiên cứu</span></div>
+            <h2 class="section-heading reveal reveal-d1">Góc nhìn chuyên môn về thương mại Việt — Trung.</h2>
+            
+            <div class="insights-grid">
+                <article class="insight-card reveal" data-card>
+                    <div class="insight-meta">
+                        <span>Xuất Nhập Khẩu</span>
+                        <span>02/2026</span>
+                    </div>
+                    <h3>Nghệ thuật đàm phán giá xuất xưởng (EXW) với nhà cung ứng trên sàn 1688</h3>
+                    <p class="insight-excerpt">
+                        Kinh nghiệm thực chiến khi làm việc với các chủ xưởng tại Nghĩa Ô và Phật Sơn: cách thức kiểm tra tính xác thực của nhà máy, kỹ thuật thương thảo đơn hàng thử (Sample Order) và thỏa thuận hạn mức thanh toán.
+                    </p>
+                    <div class="insight-tags">
+                        <span>#Sourcing</span>
+                        <span>#1688</span>
+                        <span>#ThươngĐàm</span>
+                    </div>
+                </article>
+
+                <article class="insight-card reveal reveal-d1" data-card>
+                    <div class="insight-meta">
+                        <span>Pháp lý Thương mại</span>
+                        <span>01/2026</span>
+                    </div>
+                    <h3>Phân biệt rủi ro giữa FOB Cảng Thượng Hải và CIF Cảng Hải Phòng trong Incoterms 2020</h3>
+                    <p class="insight-excerpt">
+                        Phân tích các tình huống phát sinh chi phí lưu bãi container (Demurrage) và rủi ro tổn thất hàng hóa trong quá trình vận chuyển đường biển tuyến đường Đông Á — Việt Nam.
+                    </p>
+                    <div class="insight-tags">
+                        <span>#Incoterms2020</span>
+                        <span>#CIF_FOB</span>
+                        <span>#Logistics</span>
+                    </div>
+                </article>
+
+                <article class="insight-card reveal reveal-d2" data-card>
+                    <div class="insight-meta">
+                        <span>Phương pháp học</span>
+                        <span>12/2025</span>
+                    </div>
+                    <h3>Lộ trình chinh phục HSK 6 và chứng chỉ BCT cho sinh viên khối ngành Kinh tế</h3>
+                    <p class="insight-excerpt">
+                        Phương pháp mở rộng vốn từ vựng tài chính — ngân hàng, cách đọc nhanh báo cáo tài chính bằng tiếng Trung và rèn luyện phản xạ dịch nói song song không bị động.
+                    </p>
+                    <div class="insight-tags">
+                        <span>#HSK6</span>
+                        <span>#BCT</span>
+                        <span>#TiếngTrungFTU</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="diag-divider"></div>
+
+        <!-- § 09 — Liên hệ (Connect) -->
+        <section id="connect" class="section">
+            <div class="section-eyebrow reveal"><span class="bar"></span><span>§ 09 — Kết nối & Hợp tác</span></div>
+            
+            <div class="connect-container">
+                <div class="connect-info">
+                    <h2 class="connect-heading reveal reveal-d1">
+                        Cùng tạo nên những giá trị<br>
+                        <span class="italic font-light" style="color: var(--terracotta);">bền vững và đột phá.</span>
+                    </h2>
+                    <p class="connect-text reveal reveal-d2">
+                        Là sinh viên năm 3 tại FTU với nền tảng <strong>HSK 6, MOS Master, IELTS 7.5</strong> và kinh nghiệm thực tế, tôi luôn sẵn sàng đón nhận các cơ hội <strong>Thực tập</strong>, vị trí <strong>Chuyên viên Đối ngoại / Sourcing / Xuất Nhập Khẩu</strong> hoặc dự án biên phiên dịch thương mại song ngữ.
+                    </p>
+
+                    <a href="mailto:lethutrang2302@gmail.com" class="connect-email reveal reveal-d2" data-hover>
+                        lethutrang2302<br>@gmail.com
+                    </a>
+
+                    <div class="contact-quick-actions reveal reveal-d3">
+                        <button type="button" id="copy-email-btn" class="btn btn-primary" data-hover>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                            Sao chép Email
+                        </button>
+                    </div>
+
+                    <div class="social-links reveal reveal-d4">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon link-underline" data-hover>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon link-underline" data-hover>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            Facebook
+                        </a>
+                        <span class="social-icon" title="WeChat ID: lethutrang_2302">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            WeChat: lethutrang_2302
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Quick Message Form -->
+                <div class="contact-form-card reveal reveal-scale reveal-d2" data-card>
+                    <h3>Gửi tin nhắn trực tiếp</h3>
+                    <p>Để lại lời nhắn và tôi sẽ phản hồi trong vòng 24 giờ.</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="form-name">Họ và tên của bạn</label>
+                            <input type="text" id="form-name" class="form-input" placeholder="Ví dụ: Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="form-email">Email liên hệ</label>
+                            <input type="email" id="form-email" class="form-input" placeholder="name@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="form-subject">Chủ đề trao đổi</label>
+                            <input type="text" id="form-subject" class="form-input" placeholder="Cơ hội thực tập Sourcing / Dự án đối ngoại...">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="form-message">Nội dung tin nhắn</label>
+                            <textarea id="form-message" class="form-textarea" placeholder="Chia sẻ chi tiết nội dung bạn muốn trao đổi..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" data-hover>
+                            Gửi tin nhắn ngay
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-quote">“Ngôn ngữ là nhịp cầu, tri thức là chiếc chìa khóa mở lối thành công.”</p>
+            <p>Thiết kế &amp; hoàn thiện cho <strong>Lê Thu Trang</strong> · Sinh viên Năm 3 Đại học Ngoại Thương (FTU)</p>
+            <p class="footer-note">&copy; 2026 Lê Thu Trang. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" aria-label="Lên đầu trang" data-hover>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Interactive CV Modal -->
+    <div id="cv-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-cv-modal" class="modal-close" aria-label="Đóng">&times;</button>
+            <div style="border-bottom: 2px solid var(--terracotta); padding-bottom: 20px; margin-bottom: 24px;">
+                <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-main); margin-bottom: 4px;">LÊ THU TRANG <span style="font-family: var(--font-chinese); font-size: 0.7em; color: var(--terracotta);">(黎秋妆)</span></h2>
+                <p style="font-size: 1.05rem; color: var(--terracotta); font-weight: 600; margin-bottom: 8px;">Sinh viên Năm 3 Tiếng Trung Thương Mại · Trường Đại học Ngoại Thương (FTU)</p>
+                <div style="display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.88rem; color: var(--text-muted);">
+                    <span><strong>Ngày sinh:</strong> 23/02/2006</span>
+                    <span><strong>GPA:</strong> 3.82 / 4.0</span>
+                    <span><strong>Email:</strong> lethutrang2302@gmail.com</span>
+                    <span><strong>Địa điểm:</strong> Hà Nội, Việt Nam</span>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 8px; border-left: 3px solid var(--terracotta); padding-left: 10px;">MỤC TIÊU NGHỀ NGHIỆP</h4>
+                <p style="font-size: 0.95rem; color: var(--text-soft); line-height: 1.7;">
+                    Sinh viên năm 3 chuyên ngành Tiếng Trung Thương Mại tại Đại học Ngoại Thương, đạt trình độ <strong>HSK 6 (278/300)</strong>, <strong>HSKK Cao cấp</strong>, <strong>BCT</strong>, <strong>MOS Master</strong> và <strong>IELTS 7.5</strong>. Tìm kiếm cơ hội thực tập tại các vị trí Chuyên viên Quản lý Đơn hàng & Nguồn cung (Sourcing), Nhân viên Xuất Nhập Khẩu hoặc Thương mại điện tử xuyên biên giới nhằm áp dụng năng lực Hán ngữ chuyên sâu và kỹ năng xử lý dữ liệu vào thực tế kinh doanh.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 8px; border-left: 3px solid var(--terracotta); padding-left: 10px;">HỌC VẤN & CHỨNG CHỈ QUỐC TẾ</h4>
+                <ul style="padding-left: 20px; font-size: 0.95rem; color: var(--text-soft); line-height: 1.7;">
+                    <li><strong>Trường Đại học Ngoại Thương (FTU) (2023 – 2027):</strong> Sinh viên Năm 3 · GPA 3.82/4.0 · 3 kỳ học bổng Xuất sắc.</li>
+                    <li><strong>HSK 6 (CLEC):</strong> 278/300 Điểm (Nghe: 94, Đọc: 96, Viết: 88).</li>
+                    <li><strong>HSKK Cao cấp:</strong> 86/100 Điểm (Khẩu ngữ lưu loát).</li>
+                    <li><strong>BCT (Business Chinese Test):</strong> Kỳ thi Hán ngữ Thương mại Quốc tế.</li>
+                    <li><strong>MOS Master (Microsoft):</strong> Excel Expert, Word Expert, PowerPoint Specialist.</li>
+                    <li><strong>IELTS Academic:</strong> 7.5 Overall (Listening: 8.5, Reading: 8.0, Writing: 7.0, Speaking: 7.0).</li>
+                    <li><strong>Chứng chỉ Nghiệp vụ Logistics VLA/FIATA</strong> & <strong>Incoterms 2020 / L/C (ICC Academy)</strong>.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 8px; border-left: 3px solid var(--terracotta); padding-left: 10px;">KINH NGHIỆM LÀM VIỆC</h4>
+                <ul style="padding-left: 20px; font-size: 0.95rem; color: var(--text-soft); line-height: 1.7;">
+                    <li><strong>Thực tập sinh Sourcing (Trans-Asia Logistics, 06/2025 – nay):</strong> Đàm phán trực tiếp với 40+ xưởng Trung Quốc qua 1688/WeChat, giảm 6-8% giá EXW, quản lý đơn hàng bằng Excel Dashboard.</li>
+                    <li><strong>Cộng tác viên Phiên dịch Thương mại (Vietnam Expo):</strong> Phiên dịch đàm phán hợp đồng cung ứng máy móc cho các doanh nghiệp tỉnh Giang Tô và Tứ Xuyên.</li>
+                    <li><strong>Phó Trưởng Ban Đối ngoại (CLB Tiếng Trung FTU):</strong> Kết nối 8+ nhà tài trợ, đạt hơn 90 triệu đồng tài trợ cho chuỗi sự kiện thường niên.</li>
+                </ul>
+            </div>
+
+            <div style="display: flex; gap: 14px; justify-content: flex-end; padding-top: 18px; border-top: 1px solid var(--border-medium);">
+                <button type="button" class="btn btn-secondary" onclick="window.print()" data-hover>In / Lưu PDF</button>
+                <button type="button" class="btn btn-primary" onclick="window.print()" data-hover>Tải xuống bản PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
